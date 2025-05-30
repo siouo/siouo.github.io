@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siouo's website </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f0f4f8;
+            color: #2E5266;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .project-card {
+            width: 220px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 8px solid #8bd3dd;
+        }
+
+        .project-card:hover {
+            transform: scale(1.08);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .project-card h5 {
+            margin: 0.5rem 0 0;
+        }
+
+        .project-card a {
+            text-decoration: none;
+            color: #ef4565;
+        }
+
+        .big-shoulders-stencil-caption {
+            font-family: "Big Shoulders Stencil", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            color: #2E5266
+        }
+
+        .big-shoulders-stencil-maincontent {
+            font-family: "Big Shoulders Stencil", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 1000;
+            font-style: normal;
+            color: #6E8898
+        }
+    </style>
+
+</head>
+
+<body class="big-shoulders-stencil-maincontent">
+
+    <!--導航 logo-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Website Logo" style="height: 70px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../0304/index.html">0304</a></li>
+                            <li><a class="dropdown-item" href="../0311/index.html">0311</a></li>
+                            <li><a class="dropdown-item" href="../0318/index.html">0318</a></li>
+                            <li><a class="dropdown-item" href="../0325/index.html">0325</a></li>
+                            <li><a class="dropdown-item" href="../0408/index.html">0408</a></li>
+                            <li><a class="dropdown-item" href="../0422/index.html">0422</a></li>
+                            <li><a class="dropdown-item" href="../0429/index.html">0429</a></li>
+                            <li><a class="dropdown-item" href="../0506/index.html">0506</a></li>
+                            <li><a class="dropdown-item" href="../0513/index.html">0513</a></li>
+                            <li><a class="dropdown-item" href="../0520/index.html">0520</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    <!--content-->
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <!-- 卡片統一樣式開始 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="project-card bg-light text-center p-2">
+                    <img src="img/影.jpg" alt="Image">
+                    <h5>排球少年</h5>
+                    <p>影山</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="project-card bg-light text-center p-2">
+                    <img src="img/轟1.jpg" alt="Image">
+                    <h5>我的英雄學院</h5>
+                    <p>轟焦凍</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="project-card bg-light text-center p-2">
+                    <img src="img/5.jpg" alt="Image">
+                    <h5>咒數迴戰</h5>
+                    <p>五條悟</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="project-card bg-light text-center p-2">
+                    <img src="img/FLOEWR1.jpg" alt="Image">
+                    <h5>地縛少年花子君</h5>
+                    <p>花子君</p>
+                </div>
+            </div>
+
+            <!-- 下方卡片，自動換行且與上方保持距離 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="project-card bg-light text-center p-2">
+                    <img src="img/紫.jpg" alt="Image">
+                    <h5>紫羅蘭永恆花園</h5>
+                    <p>薇爾莉特</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="project-card bg-light text-center p-2">
+                    <img src="img/星1.jpg" alt="Image">
+                    <h5>我推的孩子</h5>
+                    <p>星野愛</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="project-card bg-light text-center p-2">
+                    <img src="img/雷1.jpg" alt="Image">
+                    <h5>RE</h5>
+                    <p>雷姆</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="project-card bg-light text-center p-2">
+                    <img src="img/喜1.jpg" alt="Image">
+                    <h5>戀上換裝娃娃</h5>
+                    <p>喜多川海夢</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-dark text-white text-center py-3">
+        © 2025 Siouo's Website. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
